@@ -1,0 +1,44 @@
+use enumset::EnumSet;
+use enumset::enum_set;
+
+use super::DomainEvent;
+
+/// A set of [`DomainEvent`]s.
+#[derive(Debug, Copy, Clone)]
+pub struct DomainEvents {
+    events: Option<EnumSet<DomainEvent>>,
+}
+
+impl DomainEvents {
+    /// DomainEvents with both lower and upper bound tightening (but not other value removal).
+    pub const BOUNDS: DomainEvents =
+        DomainEvents::new(enum_set!(DomainEvent::LowerBound | DomainEvent::UpperBound));
+    // this is all options right now, but won't be once we add variables of other types
+    /// DomainEvents with lower and upper bound tightening, assigning to a single value, and
+    ///  single value removal.
+    pub const ANY_INT: DomainEvents = DomainEvents::new(enum_set!(
+        DomainEvent::Assign
+            | DomainEvent::LowerBound
+            | DomainEvent::UpperBound
+            | DomainEvent::Removal
+    ));
+    /// DomainEvents with only lower bound tightening.
+    pub const LOWER_BOUND: DomainEvents = DomainEvents::new(enum_set!(DomainEvent::LowerBound));
+    /// DomainEvents with only upper bound tightening.
+    pub const UPPER_BOUND: DomainEvents = DomainEvents::new(enum_set!(DomainEvent::UpperBound));
+    /// DomainEvents with only assigning to a single value.
+    pub const ASSIGN: DomainEvents = DomainEvents::new(enum_set!(DomainEvent::Assign));
+}
+
+impl DomainEvents {
+    pub const fn new(int_events: EnumSet<DomainEvent>) -> DomainEvents {
+        DomainEvents {
+            events: Some(int_events),
+        }
+    }
+
+    pub(crate) fn events(&self) -> EnumSet<DomainEvent> {
+        self.events
+            .expect("Tried to retrieve int_events when it was not initialized")
+    }
+}
