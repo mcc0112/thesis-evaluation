@@ -1,0 +1,4 @@
+output ["succ = ",show(succ),"\n","maxleg = ",show(maxleg),"\n"];
+int: maxleg;
+set of int: Locations = 1..100;
+array [Locations] of int: succ;

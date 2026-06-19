@@ -1,0 +1,1088 @@
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=242
+%%%mzn-stat: nodes=54013
+%%%mzn-stat: restarts=28
+%%%mzn-stat: peakDepth=1951
+%%%mzn-stat: solveTime=20.39943125
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=26236
+%%%mzn-stat: propagations=19775630
+%%%mzn-stat: nogoods=26236
+%%%mzn-stat: AverageConflictSize=45.57981399603598
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=124.54173654520505
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=14.520125019057783
+%%%mzn-stat-end
+maxleg = 242;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 139, 67, 137, 135, 64, 2, 46, 75, 136, 97, 44, 149, 131, 49, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 40, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 72, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 94, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 25.88 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=235
+%%%mzn-stat: nodes=61698
+%%%mzn-stat: restarts=35
+%%%mzn-stat: peakDepth=2106
+%%%mzn-stat: solveTime=21.240709514
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=27463
+%%%mzn-stat: propagations=20802489
+%%%mzn-stat: nogoods=27463
+%%%mzn-stat: AverageConflictSize=44.7119397006882
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=122.51436478170629
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=14.695772493900884
+%%%mzn-stat-end
+maxleg = 235;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 40, 67, 137, 135, 64, 2, 46, 75, 136, 97, 44, 149, 131, 49, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 139, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 91, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 72, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 94, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 26.73 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=230
+%%%mzn-stat: nodes=78652
+%%%mzn-stat: restarts=40
+%%%mzn-stat: peakDepth=2106
+%%%mzn-stat: solveTime=27.473601869
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=33826
+%%%mzn-stat: propagations=25698220
+%%%mzn-stat: nogoods=33826
+%%%mzn-stat: AverageConflictSize=49.10373677053154
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=129.91935197776857
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=14.144770295039319
+%%%mzn-stat-end
+maxleg = 230;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 94, 67, 137, 135, 64, 2, 46, 75, 136, 97, 44, 149, 131, 49, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 72, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 32.97 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=223
+%%%mzn-stat: nodes=132300
+%%%mzn-stat: restarts=41
+%%%mzn-stat: peakDepth=2354
+%%%mzn-stat: solveTime=50.272644048
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=79120
+%%%mzn-stat: propagations=60274898
+%%%mzn-stat: nogoods=79120
+%%%mzn-stat: AverageConflictSize=28.499595551061677
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=76.57671890798787
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.47211830131446
+%%%mzn-stat-end
+maxleg = 223;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 94, 67, 137, 135, 49, 2, 46, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 55.78 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=222
+%%%mzn-stat: nodes=135365
+%%%mzn-stat: restarts=42
+%%%mzn-stat: peakDepth=2389
+%%%mzn-stat: solveTime=50.457154062
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=79368
+%%%mzn-stat: propagations=60563776
+%%%mzn-stat: nogoods=79368
+%%%mzn-stat: AverageConflictSize=28.454049490978733
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=76.53197762322347
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.467190807378289
+%%%mzn-stat-end
+maxleg = 222;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 94, 67, 137, 135, 49, 2, 46, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 55.97 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=221
+%%%mzn-stat: nodes=148734
+%%%mzn-stat: restarts=43
+%%%mzn-stat: peakDepth=2389
+%%%mzn-stat: solveTime=54.987109723
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=88110
+%%%mzn-stat: propagations=65113388
+%%%mzn-stat: nogoods=88110
+%%%mzn-stat: AverageConflictSize=27.29786630348428
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=73.63568266939053
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.222517307910566
+%%%mzn-stat-end
+maxleg = 221;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 94, 67, 137, 135, 49, 2, 46, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 60.52 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=220
+%%%mzn-stat: nodes=151845
+%%%mzn-stat: restarts=44
+%%%mzn-stat: peakDepth=2389
+%%%mzn-stat: solveTime=55.191371683
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=88388
+%%%mzn-stat: propagations=65483916
+%%%mzn-stat: nogoods=88388
+%%%mzn-stat: AverageConflictSize=27.244897497397837
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=73.58634656288184
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.225268135946056
+%%%mzn-stat-end
+maxleg = 220;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 94, 67, 137, 135, 49, 2, 46, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 60.73 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=219
+%%%mzn-stat: nodes=158105
+%%%mzn-stat: restarts=45
+%%%mzn-stat: peakDepth=2389
+%%%mzn-stat: solveTime=57.006291304
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=91657
+%%%mzn-stat: propagations=68140909
+%%%mzn-stat: nogoods=91657
+%%%mzn-stat: AverageConflictSize=26.768779253084872
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=72.44798542391743
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.174302017303644
+%%%mzn-stat-end
+maxleg = 219;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 78, 94, 67, 137, 135, 49, 2, 46, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 29, 17, 83, 80, 52, 98, 35, 25, 109, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 111, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 54, 73, 76, 60, 27, 120, 102, 59, 43, 68, 5, 47, 20, 4, 122, 107, 103, 86, 13, 24, 22, 127, 50, 93, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 81, 142, 112]);
+% time elapsed: 62.56 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=218
+%%%mzn-stat: nodes=162711
+%%%mzn-stat: restarts=47
+%%%mzn-stat: peakDepth=2389
+%%%mzn-stat: solveTime=57.281322393
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=92026
+%%%mzn-stat: propagations=68523369
+%%%mzn-stat: nogoods=92026
+%%%mzn-stat: AverageConflictSize=26.699769630321864
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=72.35698606915437
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.182502770956035
+%%%mzn-stat-end
+maxleg = 218;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 49, 2, 50, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 43, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 20, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 62.84 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=217
+%%%mzn-stat: nodes=166821
+%%%mzn-stat: restarts=48
+%%%mzn-stat: peakDepth=2389
+%%%mzn-stat: solveTime=57.970528788
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=93110
+%%%mzn-stat: propagations=69214533
+%%%mzn-stat: nogoods=93110
+%%%mzn-stat: AverageConflictSize=26.587412737622167
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=72.08166684566642
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.17043282139405
+%%%mzn-stat-end
+maxleg = 217;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 49, 2, 50, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 43, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 20, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 63.54 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=216
+%%%mzn-stat: nodes=170263
+%%%mzn-stat: restarts=49
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=58.334205368
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=93609
+%%%mzn-stat: propagations=69720680
+%%%mzn-stat: nogoods=93609
+%%%mzn-stat: AverageConflictSize=26.524073539937397
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=72.08927560384151
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.177675223536198
+%%%mzn-stat-end
+maxleg = 216;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 49, 2, 50, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 43, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 20, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 63.92 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=215
+%%%mzn-stat: nodes=173242
+%%%mzn-stat: restarts=50
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=58.582306715
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=93962
+%%%mzn-stat: propagations=70049206
+%%%mzn-stat: nogoods=93962
+%%%mzn-stat: AverageConflictSize=26.485068431919288
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.95863221302228
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.176060535109938
+%%%mzn-stat-end
+maxleg = 215;
+succ = array1d(1..150,[146, 114, 108, 84, 148, 53, 58, 82, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 49, 2, 50, 75, 136, 97, 44, 149, 131, 72, 14, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 43, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 65, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 20, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 15, 31, 90, 21, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 64.17 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=213
+%%%mzn-stat: nodes=180412
+%%%mzn-stat: restarts=54
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=59.058399914
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=94606
+%%%mzn-stat: propagations=70795559
+%%%mzn-stat: nogoods=94606
+%%%mzn-stat: AverageConflictSize=26.371466925987782
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.80296175718242
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.191319789442531
+%%%mzn-stat-end
+maxleg = 213;
+succ = array1d(1..150,[146, 15, 108, 84, 148, 53, 58, 21, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 49, 2, 50, 75, 136, 97, 44, 149, 131, 72, 114, 45, 61, 119, 66, 42, 144, 105, 134, 48, 34, 91, 132, 74, 37, 115, 118, 43, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 20, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 30, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 64.67 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=209
+%%%mzn-stat: nodes=186173
+%%%mzn-stat: restarts=58
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=59.251134016
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=94795
+%%%mzn-stat: propagations=71056476
+%%%mzn-stat: nogoods=94795
+%%%mzn-stat: AverageConflictSize=26.332654675879528
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.72791813914236
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.208070045888496
+%%%mzn-stat-end
+maxleg = 209;
+succ = array1d(1..150,[146, 15, 108, 84, 148, 53, 58, 21, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 43, 2, 50, 75, 136, 97, 44, 149, 131, 72, 114, 45, 61, 119, 66, 42, 144, 105, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 20, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 64.86 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=208
+%%%mzn-stat: nodes=189202
+%%%mzn-stat: restarts=59
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=59.452033582
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=95043
+%%%mzn-stat: propagations=71354478
+%%%mzn-stat: nogoods=95043
+%%%mzn-stat: AverageConflictSize=26.301947539534737
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.70103006007807
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.207926938333175
+%%%mzn-stat-end
+maxleg = 208;
+succ = array1d(1..150,[146, 15, 108, 84, 148, 53, 58, 21, 16, 95, 9, 138, 36, 52, 109, 67, 137, 135, 43, 2, 50, 75, 136, 97, 44, 149, 131, 72, 114, 45, 61, 119, 66, 42, 144, 105, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 83, 80, 78, 98, 35, 25, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 20, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 65.08 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=207
+%%%mzn-stat: nodes=198284
+%%%mzn-stat: restarts=65
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=59.818886081
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=95498
+%%%mzn-stat: propagations=71871611
+%%%mzn-stat: nogoods=95498
+%%%mzn-stat: AverageConflictSize=26.24063331169239
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.57817964774131
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.25717816079918
+%%%mzn-stat-end
+maxleg = 207;
+succ = array1d(1..150,[146, 15, 108, 84, 148, 53, 58, 21, 16, 95, 9, 138, 83, 52, 109, 67, 137, 135, 43, 2, 50, 75, 136, 97, 44, 149, 131, 72, 114, 45, 61, 119, 66, 42, 144, 105, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 20, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 65.45 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=206
+%%%mzn-stat: nodes=201219
+%%%mzn-stat: restarts=66
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=60.038384433
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=95769
+%%%mzn-stat: propagations=72206221
+%%%mzn-stat: nogoods=95769
+%%%mzn-stat: AverageConflictSize=26.197370756716683
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.54997963850515
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.257024715722206
+%%%mzn-stat-end
+maxleg = 206;
+succ = array1d(1..150,[146, 15, 108, 84, 148, 53, 58, 21, 16, 95, 9, 138, 83, 52, 109, 67, 137, 135, 43, 2, 50, 75, 136, 97, 44, 149, 131, 72, 114, 45, 61, 119, 66, 42, 144, 105, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 71, 101, 100, 63, 20, 32, 39, 128, 19, 8, 150, 3, 141, 88, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 76, 60, 27, 120, 102, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 13, 24, 22, 127, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 117, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 65.69 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=205
+%%%mzn-stat: nodes=216234
+%%%mzn-stat: restarts=78
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=62.15309699
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=98952
+%%%mzn-stat: propagations=74596626
+%%%mzn-stat: nogoods=98952
+%%%mzn-stat: AverageConflictSize=25.83016007761339
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.43928369310373
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.279802328401649
+%%%mzn-stat-end
+maxleg = 205;
+succ = array1d(1..150,[146, 15, 108, 71, 148, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 2, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 105, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 102, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 127, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 67.81 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=204
+%%%mzn-stat: nodes=220524
+%%%mzn-stat: restarts=80
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=62.303320135
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=99081
+%%%mzn-stat: propagations=74800147
+%%%mzn-stat: nogoods=99081
+%%%mzn-stat: AverageConflictSize=25.807924829180166
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=71.41223847155358
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.28841049242539
+%%%mzn-stat-end
+maxleg = 204;
+succ = array1d(1..150,[146, 15, 108, 71, 148, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 2, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 67.97 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=203
+%%%mzn-stat: nodes=228772
+%%%mzn-stat: restarts=81
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=65.10172903
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=104078
+%%%mzn-stat: propagations=78365538
+%%%mzn-stat: nogoods=104078
+%%%mzn-stat: AverageConflictSize=25.362929725782585
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=70.05671707757644
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.183996617921174
+%%%mzn-stat-end
+maxleg = 203;
+succ = array1d(1..150,[146, 15, 108, 71, 148, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 2, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 70.78 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=202
+%%%mzn-stat: nodes=232165
+%%%mzn-stat: restarts=82
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=65.485713532
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=104606
+%%%mzn-stat: propagations=78865470
+%%%mzn-stat: nogoods=104606
+%%%mzn-stat: AverageConflictSize=25.29751639485307
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=70.03324857082768
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.179444773722349
+%%%mzn-stat-end
+maxleg = 202;
+succ = array1d(1..150,[146, 15, 108, 71, 148, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 2, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 71.18 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=201
+%%%mzn-stat: nodes=246554
+%%%mzn-stat: restarts=83
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=70.708637241
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=113883
+%%%mzn-stat: propagations=85947400
+%%%mzn-stat: nogoods=113883
+%%%mzn-stat: AverageConflictSize=24.661924958071
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.03573843330436
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.001554226706357
+%%%mzn-stat-end
+maxleg = 201;
+succ = array1d(1..150,[146, 15, 108, 71, 148, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 2, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 139, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 94, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 76.41 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=200
+%%%mzn-stat: nodes=252276
+%%%mzn-stat: restarts=87
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=71.155859114
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=114427
+%%%mzn-stat: propagations=86504409
+%%%mzn-stat: nogoods=114427
+%%%mzn-stat: AverageConflictSize=24.601929614514056
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.00232462618088
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.01272426962168
+%%%mzn-stat-end
+maxleg = 200;
+succ = array1d(1..150,[146, 15, 108, 71, 139, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 148, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 76.88 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=199
+%%%mzn-stat: nodes=255290
+%%%mzn-stat: restarts=88
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=71.552989937
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=114886
+%%%mzn-stat: propagations=86937265
+%%%mzn-stat: nogoods=114886
+%%%mzn-stat: AverageConflictSize=24.584997301672963
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.07274167435544
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.011463537767874
+%%%mzn-stat-end
+maxleg = 199;
+succ = array1d(1..150,[146, 15, 108, 71, 139, 53, 58, 21, 16, 95, 9, 138, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 148, 7, 130, 28, 26, 147, 79, 133, 11, 121, 88, 101, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 129, 123, 18, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 120, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 51, 110, 87, 1, 145, 55, 13, 113, 23, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 112]);
+% time elapsed: 77.28 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=198
+%%%mzn-stat: nodes=263090
+%%%mzn-stat: restarts=92
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=71.939521042
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=115214
+%%%mzn-stat: propagations=87382309
+%%%mzn-stat: nogoods=115214
+%%%mzn-stat: AverageConflictSize=24.56279618796327
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.14636242123353
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.041106115576232
+%%%mzn-stat-end
+maxleg = 198;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 138, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 81, 33, 148, 7, 130, 28, 26, 147, 51, 133, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 129, 123, 71, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 112, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 22, 105, 29, 107, 6, 34, 77, 125, 146, 18, 87, 1, 145, 55, 13, 113, 110, 10, 106, 41, 40, 56, 14, 31, 90, 82, 96, 62, 92, 54, 142, 79]);
+% time elapsed: 77.67 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=197
+%%%mzn-stat: nodes=267824
+%%%mzn-stat: restarts=98
+%%%mzn-stat: peakDepth=2395
+%%%mzn-stat: solveTime=72.326118837
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=115563
+%%%mzn-stat: propagations=87866355
+%%%mzn-stat: nogoods=115563
+%%%mzn-stat: AverageConflictSize=24.51823680589808
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.13339909832732
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.082059136574856
+%%%mzn-stat-end
+maxleg = 197;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 138, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 33, 148, 7, 130, 28, 105, 147, 51, 133, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 129, 123, 71, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 112, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 6, 34, 77, 125, 146, 18, 87, 1, 145, 55, 13, 113, 110, 10, 106, 41, 40, 54, 14, 31, 90, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 78.07 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=196
+%%%mzn-stat: nodes=270399
+%%%mzn-stat: restarts=99
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=72.404017497
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=115613
+%%%mzn-stat: propagations=87958521
+%%%mzn-stat: nogoods=115613
+%%%mzn-stat: AverageConflictSize=24.515789746827778
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.1424753271691
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.083528668921316
+%%%mzn-stat-end
+maxleg = 196;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 138, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 66, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 33, 148, 7, 130, 28, 105, 147, 51, 133, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 129, 123, 71, 143, 69, 38, 85, 64, 126, 116, 57, 70, 140, 104, 99, 89, 12, 46, 73, 135, 60, 27, 112, 127, 59, 111, 68, 5, 47, 65, 4, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 6, 34, 77, 125, 146, 18, 87, 1, 145, 55, 13, 113, 110, 10, 106, 41, 40, 54, 14, 31, 90, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 78.16 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=195
+%%%mzn-stat: nodes=273467
+%%%mzn-stat: restarts=101
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=72.641464698
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=115826
+%%%mzn-stat: propagations=88215622
+%%%mzn-stat: nogoods=115826
+%%%mzn-stat: AverageConflictSize=24.512432441766098
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.15876400808109
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.096152849964602
+%%%mzn-stat-end
+maxleg = 195;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 115, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 130, 28, 105, 147, 51, 133, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 129, 123, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 104, 116, 89, 12, 46, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 4, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 6, 34, 77, 110, 146, 18, 87, 1, 145, 55, 13, 113, 112, 10, 106, 66, 40, 5, 14, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 78.41 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=194
+%%%mzn-stat: nodes=279821
+%%%mzn-stat: restarts=103
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=73.768440867
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=117236
+%%%mzn-stat: propagations=89786859
+%%%mzn-stat: nogoods=117236
+%%%mzn-stat: AverageConflictSize=24.428034050974105
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.34662560988093
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.103620048449281
+%%%mzn-stat-end
+maxleg = 194;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 129, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 105, 147, 51, 6, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 87, 130, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 104, 116, 89, 12, 46, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 4, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 112, 10, 106, 66, 40, 5, 14, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 79.56 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=193
+%%%mzn-stat: nodes=282248
+%%%mzn-stat: restarts=104
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=73.851888197
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=117284
+%%%mzn-stat: propagations=89860721
+%%%mzn-stat: nogoods=117284
+%%%mzn-stat: AverageConflictSize=24.43072371337949
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.35511237679479
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.10414890351625
+%%%mzn-stat-end
+maxleg = 193;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 129, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 105, 147, 51, 6, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 87, 130, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 104, 116, 89, 12, 46, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 4, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 112, 10, 106, 66, 40, 5, 14, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 79.64 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=192
+%%%mzn-stat: nodes=284969
+%%%mzn-stat: restarts=105
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=74.003798949
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=117454
+%%%mzn-stat: propagations=90044906
+%%%mzn-stat: nogoods=117454
+%%%mzn-stat: AverageConflictSize=24.415490319614488
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=68.3552624857391
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.106782229638837
+%%%mzn-stat-end
+maxleg = 192;
+succ = array1d(1..150,[120, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 149, 131, 19, 114, 45, 61, 119, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 129, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 105, 147, 51, 6, 11, 121, 88, 95, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 87, 130, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 104, 116, 89, 12, 46, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 4, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 112, 10, 106, 66, 40, 5, 14, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 79.81 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=191
+%%%mzn-stat: nodes=292701
+%%%mzn-stat: restarts=106
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=76.533243908
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=121647
+%%%mzn-stat: propagations=93559843
+%%%mzn-stat: nogoods=121647
+%%%mzn-stat: AverageConflictSize=24.070696359137504
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.30089521319884
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.070326436328063
+%%%mzn-stat-end
+maxleg = 191;
+succ = array1d(1..150,[119, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 129, 118, 49, 17, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 149, 147, 51, 6, 11, 121, 88, 104, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 95, 130, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 112, 116, 89, 12, 46, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 4, 87, 106, 66, 40, 5, 14, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 82.35 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=190
+%%%mzn-stat: nodes=303564
+%%%mzn-stat: restarts=118
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=77.105588582
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=122372
+%%%mzn-stat: propagations=94401041
+%%%mzn-stat: nogoods=122372
+%%%mzn-stat: AverageConflictSize=23.96149445951688
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.11509985944497
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.1094286274638
+%%%mzn-stat-end
+maxleg = 190;
+succ = array1d(1..150,[119, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 129, 118, 49, 11, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 149, 147, 51, 6, 17, 121, 88, 104, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 95, 130, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 4, 87, 106, 66, 40, 5, 46, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 82.94 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=189
+%%%mzn-stat: nodes=306298
+%%%mzn-stat: restarts=119
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=77.222441486
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=122453
+%%%mzn-stat: propagations=94546649
+%%%mzn-stat: nogoods=122453
+%%%mzn-stat: AverageConflictSize=23.95751022841417
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.12008689048042
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.110132050664337
+%%%mzn-stat-end
+maxleg = 189;
+succ = array1d(1..150,[119, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 48, 30, 91, 132, 74, 37, 129, 118, 49, 11, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 149, 147, 51, 6, 17, 121, 88, 104, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 95, 130, 71, 143, 69, 38, 85, 64, 126, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 4, 87, 106, 66, 40, 5, 46, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 83.06 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=188
+%%%mzn-stat: nodes=311864
+%%%mzn-stat: restarts=120
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=78.783832421
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=124878
+%%%mzn-stat: propagations=96319772
+%%%mzn-stat: nogoods=124878
+%%%mzn-stat: AverageConflictSize=23.88694565896315
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.06408654847131
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.075561748266308
+%%%mzn-stat-end
+maxleg = 188;
+succ = array1d(1..150,[119, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 48, 30, 91, 88, 74, 37, 129, 118, 49, 11, 25, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 149, 147, 51, 6, 17, 121, 143, 104, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 95, 130, 71, 132, 69, 38, 85, 64, 126, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 133, 1, 145, 55, 115, 113, 4, 87, 106, 66, 40, 5, 46, 31, 33, 82, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 84.63 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=187
+%%%mzn-stat: nodes=318798
+%%%mzn-stat: restarts=123
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=79.773831002
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=125799
+%%%mzn-stat: propagations=97252381
+%%%mzn-stat: nogoods=125799
+%%%mzn-stat: AverageConflictSize=24.00822741039277
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.60049761921796
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.090612802963458
+%%%mzn-stat-end
+maxleg = 187;
+succ = array1d(1..150,[119, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 48, 30, 91, 88, 74, 37, 129, 118, 49, 11, 133, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 149, 147, 51, 6, 17, 121, 143, 104, 100, 63, 20, 32, 39, 128, 72, 8, 150, 3, 141, 84, 124, 2, 95, 130, 71, 132, 69, 38, 85, 64, 126, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 82, 1, 145, 55, 115, 113, 4, 87, 106, 66, 40, 5, 46, 31, 33, 25, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 85.63 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=186
+%%%mzn-stat: nodes=324661
+%%%mzn-stat: restarts=132
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=80.281434168
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=126347
+%%%mzn-stat: propagations=97930778
+%%%mzn-stat: nogoods=126347
+%%%mzn-stat: AverageConflictSize=23.964360056036153
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.53341195279667
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.141752475325887
+%%%mzn-stat-end
+maxleg = 186;
+succ = array1d(1..150,[119, 15, 108, 23, 139, 53, 58, 21, 16, 101, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 48, 30, 91, 88, 74, 37, 129, 118, 49, 11, 133, 80, 78, 98, 35, 36, 56, 138, 148, 7, 123, 28, 149, 147, 51, 6, 39, 121, 143, 104, 126, 63, 20, 32, 64, 128, 72, 8, 150, 100, 141, 84, 124, 2, 95, 130, 71, 132, 69, 38, 85, 17, 3, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 127, 59, 111, 68, 99, 47, 65, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 107, 13, 34, 77, 110, 146, 18, 82, 1, 145, 55, 115, 113, 4, 87, 106, 66, 40, 5, 46, 31, 33, 25, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 86.15 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=185
+%%%mzn-stat: nodes=333515
+%%%mzn-stat: restarts=136
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=80.573610285
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=126565
+%%%mzn-stat: propagations=98293878
+%%%mzn-stat: nogoods=126565
+%%%mzn-stat: AverageConflictSize=23.94754473985699
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.51503180184095
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.174471615375499
+%%%mzn-stat-end
+maxleg = 185;
+succ = array1d(1..150,[127, 107, 108, 23, 139, 53, 58, 21, 16, 87, 9, 41, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 90, 42, 144, 102, 134, 1, 30, 91, 88, 64, 37, 129, 118, 49, 11, 133, 80, 78, 98, 35, 82, 56, 138, 148, 36, 123, 28, 149, 119, 51, 6, 39, 121, 143, 104, 126, 63, 20, 32, 65, 128, 72, 8, 150, 100, 141, 84, 124, 15, 95, 147, 71, 132, 69, 38, 85, 17, 3, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 130, 59, 74, 68, 99, 47, 2, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 111, 13, 34, 77, 110, 146, 18, 48, 7, 145, 55, 115, 113, 4, 101, 106, 66, 40, 5, 46, 31, 33, 25, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 86.45 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=184
+%%%mzn-stat: nodes=339989
+%%%mzn-stat: restarts=140
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=81.700861287
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=128461
+%%%mzn-stat: propagations=100135939
+%%%mzn-stat: nogoods=128461
+%%%mzn-stat: AverageConflictSize=23.773518811156695
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.09654291964098
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.1566311954601
+%%%mzn-stat-end
+maxleg = 184;
+succ = array1d(1..150,[127, 107, 108, 23, 139, 53, 58, 21, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 61, 105, 143, 42, 144, 38, 134, 1, 30, 91, 90, 64, 37, 129, 118, 49, 11, 133, 80, 78, 98, 35, 82, 56, 88, 148, 36, 123, 28, 149, 119, 18, 6, 39, 121, 138, 104, 126, 63, 20, 32, 65, 128, 72, 8, 150, 100, 141, 51, 124, 15, 95, 147, 71, 132, 13, 25, 85, 17, 3, 54, 57, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 130, 59, 74, 68, 99, 47, 2, 10, 122, 93, 103, 86, 83, 24, 26, 22, 29, 111, 102, 34, 77, 110, 146, 33, 48, 7, 145, 41, 115, 113, 4, 101, 106, 55, 40, 5, 46, 31, 84, 69, 96, 62, 92, 81, 142, 79]);
+% time elapsed: 87.59 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=183
+%%%mzn-stat: nodes=347684
+%%%mzn-stat: restarts=147
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=82.195727753
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=128953
+%%%mzn-stat: propagations=100748353
+%%%mzn-stat: nogoods=128953
+%%%mzn-stat: AverageConflictSize=23.756058408877653
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=67.08829573565562
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.2029576667468
+%%%mzn-stat-end
+maxleg = 183;
+succ = array1d(1..150,[127, 107, 108, 23, 139, 53, 58, 21, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 131, 19, 114, 45, 57, 105, 143, 42, 144, 38, 134, 1, 30, 91, 90, 64, 37, 129, 118, 49, 11, 133, 80, 78, 98, 35, 82, 56, 88, 148, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 126, 63, 20, 32, 65, 128, 72, 8, 150, 100, 141, 51, 124, 15, 95, 147, 71, 132, 13, 25, 85, 17, 3, 54, 61, 70, 140, 112, 116, 89, 12, 14, 73, 125, 60, 27, 135, 22, 59, 74, 68, 99, 47, 2, 10, 122, 93, 103, 86, 83, 24, 26, 62, 29, 111, 102, 34, 77, 110, 146, 33, 48, 7, 145, 41, 115, 113, 4, 101, 106, 55, 40, 5, 46, 31, 84, 69, 96, 119, 92, 81, 142, 79]);
+% time elapsed: 88.10 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=182
+%%%mzn-stat: nodes=363716
+%%%mzn-stat: restarts=165
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=83.131107749
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=130003
+%%%mzn-stat: propagations=102039645
+%%%mzn-stat: nogoods=130003
+%%%mzn-stat: AverageConflictSize=23.65062344715122
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=66.96693153234925
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.2790935593794
+%%%mzn-stat-end
+maxleg = 182;
+succ = array1d(1..150,[127, 107, 108, 23, 139, 53, 58, 21, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 44, 120, 63, 19, 114, 45, 57, 105, 143, 42, 144, 38, 134, 1, 30, 91, 90, 64, 37, 129, 118, 49, 11, 115, 80, 78, 98, 35, 133, 56, 88, 148, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 126, 131, 20, 32, 65, 128, 72, 8, 150, 100, 141, 51, 124, 15, 95, 147, 71, 132, 13, 25, 85, 17, 3, 145, 61, 70, 140, 112, 54, 89, 12, 14, 73, 125, 60, 27, 135, 22, 59, 74, 68, 99, 47, 2, 10, 122, 93, 103, 86, 83, 24, 26, 62, 29, 111, 102, 34, 77, 110, 146, 33, 48, 7, 116, 41, 69, 113, 4, 101, 106, 55, 40, 5, 46, 31, 84, 82, 96, 119, 92, 81, 142, 79]);
+% time elapsed: 89.04 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=180
+%%%mzn-stat: nodes=366908
+%%%mzn-stat: restarts=166
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=83.264185154
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=130132
+%%%mzn-stat: propagations=102177852
+%%%mzn-stat: nogoods=130132
+%%%mzn-stat: AverageConflictSize=23.64365413580057
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=66.96524298404697
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.280361479113516
+%%%mzn-stat-end
+maxleg = 180;
+succ = array1d(1..150,[127, 107, 110, 23, 139, 133, 58, 95, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 38, 120, 63, 19, 114, 45, 57, 105, 143, 42, 144, 1, 134, 48, 30, 91, 90, 64, 37, 129, 118, 49, 11, 115, 80, 35, 98, 25, 44, 56, 88, 148, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 126, 131, 20, 32, 65, 128, 72, 8, 150, 108, 141, 51, 124, 15, 78, 147, 71, 132, 13, 21, 85, 17, 3, 145, 61, 70, 140, 112, 54, 89, 12, 14, 73, 125, 60, 27, 135, 22, 59, 74, 68, 99, 47, 2, 10, 122, 93, 103, 86, 83, 24, 26, 62, 29, 111, 102, 34, 77, 100, 146, 33, 69, 7, 116, 41, 53, 113, 4, 101, 106, 55, 40, 5, 46, 31, 84, 82, 96, 119, 92, 81, 142, 79]);
+% time elapsed: 89.20 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=179
+%%%mzn-stat: nodes=378182
+%%%mzn-stat: restarts=173
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=86.679750331
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=135996
+%%%mzn-stat: propagations=107235926
+%%%mzn-stat: nogoods=135996
+%%%mzn-stat: AverageConflictSize=23.347951410335597
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=66.00761051795641
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.225962528309656
+%%%mzn-stat-end
+maxleg = 179;
+succ = array1d(1..150,[127, 107, 110, 23, 139, 133, 58, 95, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 94, 50, 75, 136, 97, 38, 120, 63, 19, 114, 45, 57, 105, 143, 24, 144, 1, 134, 48, 30, 91, 90, 64, 37, 129, 118, 49, 11, 115, 80, 35, 98, 25, 44, 56, 88, 148, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 141, 51, 122, 15, 78, 147, 71, 132, 13, 21, 85, 17, 3, 145, 61, 70, 140, 112, 54, 89, 12, 14, 59, 125, 60, 27, 135, 22, 73, 74, 68, 99, 47, 2, 10, 42, 93, 103, 86, 83, 124, 26, 62, 29, 111, 102, 34, 77, 128, 119, 33, 69, 7, 116, 41, 53, 113, 4, 101, 106, 55, 40, 5, 46, 31, 84, 82, 96, 32, 92, 81, 142, 79]);
+% time elapsed: 92.61 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=176
+%%%mzn-stat: nodes=393284
+%%%mzn-stat: restarts=189
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=87.892624797
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=137557
+%%%mzn-stat: propagations=108927113
+%%%mzn-stat: nogoods=137557
+%%%mzn-stat: AverageConflictSize=23.23265991552593
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=65.88172902869356
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.293122123919538
+%%%mzn-stat-end
+maxleg = 176;
+succ = array1d(1..150,[127, 107, 110, 23, 139, 133, 58, 95, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 122, 50, 75, 136, 97, 38, 120, 63, 19, 114, 45, 57, 105, 143, 24, 144, 48, 134, 1, 30, 91, 90, 64, 37, 25, 118, 94, 11, 115, 111, 35, 98, 129, 44, 56, 88, 148, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 141, 51, 124, 15, 78, 147, 71, 132, 13, 21, 85, 17, 3, 145, 61, 70, 140, 112, 54, 89, 12, 14, 59, 125, 60, 27, 135, 22, 73, 74, 68, 99, 47, 2, 10, 42, 93, 103, 86, 83, 49, 26, 62, 29, 80, 102, 34, 77, 128, 119, 33, 69, 7, 116, 41, 53, 113, 4, 101, 106, 55, 40, 5, 46, 31, 84, 82, 96, 32, 92, 81, 142, 79]);
+% time elapsed: 93.84 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=175
+%%%mzn-stat: nodes=405429
+%%%mzn-stat: restarts=200
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=88.536667348
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=138116
+%%%mzn-stat: propagations=109740334
+%%%mzn-stat: nogoods=138116
+%%%mzn-stat: AverageConflictSize=23.1759101045498
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=65.8049031249095
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.34255987720467
+%%%mzn-stat-end
+maxleg = 175;
+succ = array1d(1..150,[127, 107, 110, 23, 139, 133, 58, 95, 16, 87, 9, 66, 117, 52, 109, 67, 137, 76, 43, 122, 50, 75, 136, 97, 38, 120, 63, 19, 114, 45, 57, 105, 143, 24, 78, 48, 134, 1, 30, 91, 90, 64, 37, 25, 118, 94, 11, 115, 111, 35, 98, 144, 44, 5, 88, 141, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 46, 51, 124, 15, 129, 147, 71, 132, 13, 21, 85, 17, 3, 145, 61, 70, 140, 112, 56, 89, 12, 54, 59, 125, 60, 27, 135, 22, 73, 74, 68, 99, 47, 2, 10, 42, 93, 103, 86, 83, 49, 26, 62, 29, 80, 102, 34, 77, 128, 119, 33, 69, 7, 116, 41, 53, 113, 4, 101, 106, 55, 40, 148, 14, 31, 84, 82, 96, 32, 92, 81, 142, 79]);
+% time elapsed: 94.50 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=174
+%%%mzn-stat: nodes=407887
+%%%mzn-stat: restarts=201
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=88.603974946
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=138145
+%%%mzn-stat: propagations=109811874
+%%%mzn-stat: nogoods=138145
+%%%mzn-stat: AverageConflictSize=23.17187013645083
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=65.80364834051178
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.342987440732564
+%%%mzn-stat-end
+maxleg = 174;
+succ = array1d(1..150,[127, 107, 110, 23, 139, 133, 58, 95, 16, 87, 9, 85, 117, 52, 109, 67, 137, 76, 43, 122, 50, 75, 136, 97, 38, 120, 63, 19, 114, 45, 57, 105, 143, 24, 78, 48, 134, 1, 30, 91, 90, 64, 37, 25, 118, 94, 11, 115, 111, 35, 98, 144, 44, 5, 88, 141, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 46, 51, 124, 15, 129, 147, 71, 132, 13, 21, 84, 17, 3, 145, 61, 70, 140, 112, 56, 89, 12, 54, 59, 125, 60, 27, 135, 22, 73, 74, 68, 99, 47, 2, 10, 42, 93, 103, 86, 83, 49, 26, 62, 29, 80, 102, 34, 77, 128, 119, 33, 69, 7, 116, 41, 53, 113, 4, 101, 106, 55, 40, 148, 14, 31, 66, 82, 96, 32, 92, 81, 142, 79]);
+% time elapsed: 94.57 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=173
+%%%mzn-stat: nodes=416555
+%%%mzn-stat: restarts=215
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=89.852108123
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=139887
+%%%mzn-stat: propagations=111541889
+%%%mzn-stat: nogoods=139887
+%%%mzn-stat: AverageConflictSize=23.067418702238236
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=65.69638350954699
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.37361584707657
+%%%mzn-stat-end
+maxleg = 173;
+succ = array1d(1..150,[127, 107, 110, 23, 40, 133, 58, 95, 16, 87, 9, 85, 117, 52, 109, 67, 137, 76, 43, 122, 50, 75, 136, 97, 38, 120, 63, 19, 114, 45, 57, 105, 143, 24, 78, 48, 134, 1, 30, 139, 132, 64, 37, 25, 118, 94, 11, 115, 111, 35, 98, 144, 44, 5, 88, 141, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 46, 51, 124, 15, 129, 147, 71, 41, 13, 21, 84, 17, 3, 145, 61, 70, 140, 112, 91, 89, 12, 54, 59, 125, 60, 27, 135, 22, 73, 74, 68, 99, 47, 2, 10, 42, 93, 103, 86, 83, 49, 26, 62, 29, 80, 102, 34, 77, 128, 119, 33, 69, 7, 96, 90, 53, 113, 4, 101, 106, 55, 56, 148, 14, 31, 66, 82, 116, 32, 92, 81, 142, 79]);
+% time elapsed: 95.83 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=172
+%%%mzn-stat: nodes=419218
+%%%mzn-stat: restarts=216
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=89.936157214
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=139939
+%%%mzn-stat: propagations=111629588
+%%%mzn-stat: nogoods=139939
+%%%mzn-stat: AverageConflictSize=23.062548681925698
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=65.6887500982571
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.374577494479738
+%%%mzn-stat-end
+maxleg = 172;
+succ = array1d(1..150,[127, 114, 110, 23, 40, 133, 58, 95, 16, 87, 9, 85, 117, 46, 109, 67, 137, 76, 43, 122, 50, 75, 136, 97, 38, 120, 63, 19, 14, 45, 57, 105, 143, 24, 78, 48, 134, 1, 30, 139, 132, 64, 37, 25, 118, 94, 11, 115, 111, 52, 98, 144, 44, 5, 88, 141, 36, 123, 28, 149, 130, 18, 6, 39, 121, 138, 104, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 70, 51, 124, 15, 129, 147, 71, 41, 13, 35, 84, 17, 3, 145, 61, 80, 140, 112, 91, 89, 12, 54, 59, 125, 60, 27, 135, 22, 73, 74, 68, 99, 47, 2, 10, 42, 93, 103, 86, 83, 49, 26, 62, 29, 107, 102, 34, 77, 128, 119, 33, 69, 7, 96, 90, 53, 113, 4, 101, 106, 55, 56, 148, 21, 31, 66, 82, 116, 32, 92, 81, 142, 79]);
+% time elapsed: 95.93 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=171
+%%%mzn-stat: nodes=430004
+%%%mzn-stat: restarts=231
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=91.915192134
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=142458
+%%%mzn-stat: propagations=113814006
+%%%mzn-stat: nogoods=142458
+%%%mzn-stat: AverageConflictSize=23.133295427424223
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=66.19049825211641
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.408864367041515
+%%%mzn-stat-end
+maxleg = 171;
+succ = array1d(1..150,[127, 114, 110, 23, 40, 133, 58, 95, 16, 87, 9, 85, 117, 46, 109, 67, 137, 76, 134, 122, 50, 75, 136, 97, 38, 105, 63, 43, 14, 45, 57, 119, 143, 24, 82, 48, 78, 1, 30, 139, 132, 64, 37, 25, 118, 94, 11, 115, 111, 52, 98, 144, 44, 141, 88, 99, 36, 123, 19, 149, 130, 18, 86, 39, 121, 138, 106, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 70, 51, 124, 15, 104, 147, 71, 41, 13, 35, 84, 17, 3, 145, 61, 80, 140, 112, 91, 89, 12, 54, 59, 125, 60, 6, 135, 22, 73, 74, 68, 5, 47, 2, 10, 42, 93, 103, 27, 83, 49, 26, 62, 29, 107, 102, 34, 77, 128, 120, 33, 69, 7, 96, 90, 53, 113, 4, 101, 28, 55, 56, 148, 21, 31, 66, 129, 116, 32, 92, 81, 142, 79]);
+% time elapsed: 97.92 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=170
+%%%mzn-stat: nodes=433906
+%%%mzn-stat: restarts=233
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=92.039650287
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=142535
+%%%mzn-stat: propagations=113941213
+%%%mzn-stat: nogoods=142535
+%%%mzn-stat: AverageConflictSize=23.12802469568878
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=66.18797488336197
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.412916125863823
+%%%mzn-stat-end
+maxleg = 170;
+succ = array1d(1..150,[127, 114, 110, 23, 40, 133, 58, 95, 16, 87, 9, 85, 117, 46, 109, 67, 137, 76, 134, 93, 50, 75, 136, 97, 38, 105, 63, 43, 14, 45, 57, 119, 143, 24, 82, 48, 78, 1, 30, 139, 132, 64, 37, 25, 118, 94, 11, 115, 122, 52, 98, 144, 44, 141, 88, 99, 36, 123, 19, 149, 130, 18, 86, 39, 111, 138, 106, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 121, 51, 124, 15, 104, 147, 71, 41, 13, 35, 84, 17, 3, 145, 61, 80, 140, 112, 91, 89, 12, 54, 59, 125, 60, 6, 135, 22, 73, 74, 68, 5, 47, 2, 10, 42, 70, 103, 27, 83, 49, 26, 62, 29, 107, 102, 34, 77, 128, 120, 33, 69, 7, 96, 90, 53, 113, 4, 101, 28, 55, 56, 148, 21, 31, 66, 129, 116, 32, 92, 81, 142, 79]);
+% time elapsed: 98.06 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=169
+%%%mzn-stat: nodes=436785
+%%%mzn-stat: restarts=234
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=92.54254616
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=143268
+%%%mzn-stat: propagations=114461712
+%%%mzn-stat: nogoods=143268
+%%%mzn-stat: AverageConflictSize=23.1386003852919
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=66.32922215707625
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.408772370661977
+%%%mzn-stat-end
+maxleg = 169;
+succ = array1d(1..150,[127, 114, 110, 23, 40, 133, 58, 95, 16, 87, 9, 85, 117, 46, 109, 67, 137, 76, 134, 93, 50, 75, 136, 97, 38, 105, 63, 43, 14, 45, 57, 119, 143, 24, 82, 48, 78, 1, 30, 139, 132, 64, 37, 25, 118, 94, 11, 115, 122, 52, 98, 144, 44, 141, 88, 99, 36, 123, 19, 149, 130, 18, 86, 39, 111, 138, 106, 100, 131, 20, 146, 65, 126, 72, 8, 150, 108, 121, 51, 124, 15, 104, 147, 71, 41, 13, 35, 84, 17, 3, 145, 61, 80, 140, 112, 91, 89, 12, 54, 59, 125, 60, 6, 135, 22, 73, 74, 68, 5, 47, 2, 10, 42, 70, 103, 27, 83, 49, 26, 62, 29, 107, 102, 34, 77, 128, 120, 33, 69, 7, 96, 90, 53, 113, 4, 101, 28, 55, 56, 148, 21, 31, 66, 129, 116, 32, 92, 81, 142, 79]);
+% time elapsed: 98.57 s
+----------
+%%%mzn-stat: initTime=0.079406588
+%%%mzn-stat: objective=169
+%%%mzn-stat: nodes=7025584
+%%%mzn-stat: restarts=9928
+%%%mzn-stat: peakDepth=2423
+%%%mzn-stat: solveTime=1793.889966256
+%%%mzn-stat: variables=3287
+%%%mzn-stat: propagators=14028
+%%%mzn-stat: failures=3295302
+%%%mzn-stat: propagations=1802532114
+%%%mzn-stat: nogoods=3295302
+%%%mzn-stat: AverageConflictSize=13.887462514816548
+%%%mzn-stat: NumUnitNogoodsLearned=111
+%%%mzn-stat: AverageLearnedNogoodLength=46.898194459870446
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=14.206987098602799
+%%%mzn-stat-end

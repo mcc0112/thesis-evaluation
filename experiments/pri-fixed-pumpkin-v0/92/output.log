@@ -1,0 +1,333 @@
+% Logging successfully configured
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=875
+%%%mzn-stat: nodes=3087
+%%%mzn-stat: restarts=0
+%%%mzn-stat: peakDepth=2229
+%%%mzn-stat: solveTime=0.087192932
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=370
+%%%mzn-stat: propagations=258471
+%%%mzn-stat: nogoods=370
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=269
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=24267
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=269
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=57
+%%%mzn-stat: circuitNumber4951PropagationsTotal=1167
+%%%mzn-stat: AverageConflictSize=11.586486486486486
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=18.416216216216217
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=12.02972972972973
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=2142
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=2143
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=772
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=0.36024265048996734
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=772
+%%%mzn-stat-end
+maxleg = 875;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 25, 28, 29, 38, 30, 31, 33, 37, 43, 41, 40, 32, 51, 50, 21, 36, 58, 34, 54, 49, 44, 48, 59, 56, 61, 55, 57, 53, 71, 62, 60, 63, 46, 64, 67, 70, 73, 52, 75, 66, 47, 77, 65, 81, 90, 68, 92, 69, 98, 96, 45, 74, 79, 76, 86, 80, 72, 94, 84, 82, 93, 91, 97, 83, 85, 89, 87, 88, 100, 78, 95, 99]);
+% time elapsed: 5.45 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=798
+%%%mzn-stat: nodes=5471
+%%%mzn-stat: restarts=0
+%%%mzn-stat: peakDepth=2229
+%%%mzn-stat: solveTime=0.105352164
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=439
+%%%mzn-stat: propagations=309933
+%%%mzn-stat: nogoods=439
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=270
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=24358
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=270
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=63
+%%%mzn-stat: circuitNumber4951PropagationsTotal=1404
+%%%mzn-stat: AverageConflictSize=10.633257403189067
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=19.85876993166287
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.833712984054669
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=4265
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=4267
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=1620
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=0.3937192406843215
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=1680
+%%%mzn-stat-end
+maxleg = 798;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 25, 28, 29, 38, 30, 31, 33, 37, 43, 41, 40, 32, 51, 50, 21, 36, 58, 34, 54, 49, 44, 48, 59, 56, 61, 55, 57, 53, 71, 62, 60, 63, 46, 64, 67, 70, 73, 52, 75, 66, 47, 77, 72, 81, 90, 68, 96, 69, 86, 97, 45, 74, 79, 65, 92, 76, 93, 94, 80, 95, 85, 88, 82, 98, 83, 89, 87, 100, 91, 78, 84, 99]);
+% time elapsed: 5.45 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=470
+%%%mzn-stat: nodes=7685
+%%%mzn-stat: restarts=0
+%%%mzn-stat: peakDepth=2229
+%%%mzn-stat: solveTime=0.110747738
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=448
+%%%mzn-stat: propagations=329425
+%%%mzn-stat: nogoods=448
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=277
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=24991
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=277
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=69
+%%%mzn-stat: circuitNumber4951PropagationsTotal=1523
+%%%mzn-stat: AverageConflictSize=10.515625
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=19.604910714285715
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=11.662946428571429
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=6370
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=6373
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=1772
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=0.4060881845284795
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=2588
+%%%mzn-stat-end
+maxleg = 470;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 25, 28, 29, 38, 30, 31, 33, 37, 43, 41, 40, 32, 51, 50, 21, 36, 58, 34, 54, 49, 44, 48, 59, 56, 61, 55, 57, 53, 71, 62, 60, 63, 46, 64, 67, 70, 73, 52, 75, 66, 47, 77, 72, 81, 90, 68, 96, 69, 92, 97, 45, 74, 83, 65, 86, 76, 93, 94, 80, 95, 85, 88, 82, 98, 79, 89, 87, 100, 91, 78, 84, 99]);
+% time elapsed: 5.45 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=461
+%%%mzn-stat: nodes=105398
+%%%mzn-stat: restarts=1
+%%%mzn-stat: peakDepth=2302
+%%%mzn-stat: solveTime=14.593074803
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=39694
+%%%mzn-stat: propagations=29688503
+%%%mzn-stat: nogoods=39694
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=13060
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=1205117
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=13060
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=32082
+%%%mzn-stat: circuitNumber4951PropagationsTotal=135527
+%%%mzn-stat: AverageConflictSize=11.128331737794126
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=33.51541794729682
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=23.17133571824457
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=9136
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=9314
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=5036
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=20.94062701309856
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=10209
+%%%mzn-stat-end
+maxleg = 461;
+succ = array1d(1..100,[3, 5, 38, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 21, 39, 26, 35, 42, 22, 25, 28, 29, 2, 30, 31, 33, 37, 43, 41, 40, 32, 51, 50, 24, 36, 58, 34, 54, 49, 44, 48, 59, 56, 61, 55, 57, 53, 71, 62, 60, 63, 46, 64, 67, 70, 73, 52, 75, 66, 47, 77, 72, 81, 90, 68, 96, 69, 92, 97, 45, 74, 83, 65, 86, 76, 93, 94, 80, 95, 85, 88, 82, 98, 79, 89, 87, 100, 91, 78, 84, 99]);
+% time elapsed: 19.94 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=460
+%%%mzn-stat: nodes=107737
+%%%mzn-stat: restarts=1
+%%%mzn-stat: peakDepth=2302
+%%%mzn-stat: solveTime=14.611402945
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=39766
+%%%mzn-stat: propagations=29741009
+%%%mzn-stat: nogoods=39766
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=13063
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=1205358
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=13063
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=32091
+%%%mzn-stat: circuitNumber4951PropagationsTotal=135760
+%%%mzn-stat: AverageConflictSize=11.116229945179299
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=33.48604335361867
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=23.146507066338078
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=11223
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=11402
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=5653
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=17.389668479214173
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=13445
+%%%mzn-stat-end
+maxleg = 460;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 25, 28, 29, 38, 30, 31, 33, 37, 43, 41, 47, 32, 51, 50, 44, 49, 40, 34, 54, 36, 52, 48, 46, 56, 61, 55, 57, 53, 71, 45, 60, 63, 65, 58, 62, 70, 73, 68, 59, 69, 74, 77, 72, 81, 75, 76, 78, 80, 92, 97, 64, 84, 83, 66, 86, 87, 93, 94, 21, 82, 85, 91, 96, 98, 79, 89, 88, 100, 90, 67, 95, 99]);
+% time elapsed: 19.96 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=410
+%%%mzn-stat: nodes=109927
+%%%mzn-stat: restarts=1
+%%%mzn-stat: peakDepth=2302
+%%%mzn-stat: solveTime=14.620046556
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=39778
+%%%mzn-stat: propagations=29760640
+%%%mzn-stat: nogoods=39778
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=13065
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=1205519
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=13065
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=32098
+%%%mzn-stat: circuitNumber4951PropagationsTotal=135878
+%%%mzn-stat: AverageConflictSize=11.116697672080043
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=33.482879983910706
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=23.144476846498065
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=13296
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=13476
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=5944
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=14.953547046601365
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=16682
+%%%mzn-stat-end
+maxleg = 410;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 25, 28, 29, 38, 30, 31, 33, 37, 43, 41, 47, 32, 51, 50, 44, 49, 40, 34, 54, 36, 52, 48, 46, 56, 61, 55, 57, 53, 71, 45, 60, 63, 65, 58, 62, 70, 73, 68, 59, 69, 74, 77, 72, 81, 75, 76, 96, 80, 92, 67, 64, 84, 83, 66, 86, 87, 93, 94, 21, 82, 85, 91, 97, 98, 79, 89, 88, 90, 100, 78, 95, 99]);
+% time elapsed: 19.98 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=361
+%%%mzn-stat: nodes=668731
+%%%mzn-stat: restarts=2
+%%%mzn-stat: peakDepth=2302
+%%%mzn-stat: solveTime=83.879582984
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=285836
+%%%mzn-stat: propagations=214225895
+%%%mzn-stat: nogoods=285836
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=107834
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=9844303
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=107834
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=166681
+%%%mzn-stat: circuitNumber4951PropagationsTotal=872358
+%%%mzn-stat: AverageConflictSize=10.358786157097077
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=25.99494115506794
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=13.939832631299067
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=15338
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=15769
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=8048
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=49.803602003931765
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=27013
+%%%mzn-stat-end
+maxleg = 361;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 21, 15, 13, 19, 20, 12, 6, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 25, 28, 29, 38, 30, 31, 33, 37, 43, 41, 47, 32, 51, 50, 44, 49, 40, 34, 54, 36, 52, 48, 46, 56, 61, 55, 57, 53, 71, 45, 60, 63, 65, 58, 62, 70, 73, 68, 59, 69, 74, 77, 72, 81, 75, 76, 96, 80, 92, 67, 64, 84, 83, 66, 86, 87, 93, 94, 10, 82, 85, 91, 97, 98, 79, 89, 88, 90, 100, 78, 95, 99]);
+% time elapsed: 89.24 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=358
+%%%mzn-stat: nodes=716089
+%%%mzn-stat: restarts=5
+%%%mzn-stat: peakDepth=2305
+%%%mzn-stat: solveTime=92.374885805
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=304103
+%%%mzn-stat: propagations=228501970
+%%%mzn-stat: nogoods=304103
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=113203
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=10345176
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=113203
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=179730
+%%%mzn-stat: circuitNumber4951PropagationsTotal=932964
+%%%mzn-stat: AverageConflictSize=10.649973857541688
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=27.08289296718546
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=15.040959806381391
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=17376
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=18506
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=13593
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=203.52993623689613
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=59939
+%%%mzn-stat-end
+maxleg = 358;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 21, 15, 13, 19, 20, 12, 6, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 51, 65, 28, 29, 38, 30, 31, 33, 37, 43, 41, 47, 32, 73, 50, 44, 49, 40, 34, 54, 36, 52, 48, 46, 56, 61, 55, 57, 25, 71, 45, 22, 63, 60, 58, 62, 70, 53, 68, 59, 69, 74, 77, 72, 81, 75, 76, 96, 80, 92, 67, 64, 84, 83, 66, 86, 87, 93, 94, 10, 82, 85, 91, 97, 98, 79, 89, 88, 90, 100, 78, 95, 99]);
+% time elapsed: 97.74 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=356
+%%%mzn-stat: nodes=718203
+%%%mzn-stat: restarts=5
+%%%mzn-stat: peakDepth=2305
+%%%mzn-stat: solveTime=92.38303384
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=304103
+%%%mzn-stat: propagations=228516079
+%%%mzn-stat: nogoods=304103
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=113203
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=10345176
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=113203
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=179732
+%%%mzn-stat: circuitNumber4951PropagationsTotal=933052
+%%%mzn-stat: AverageConflictSize=10.649973857541688
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=27.08289296718546
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=15.040959806381391
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=19403
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=20534
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=13593
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=183.783042758352
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=67215
+%%%mzn-stat-end
+maxleg = 356;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 12, 10, 23, 16, 14, 17, 18, 27, 24, 39, 26, 35, 42, 22, 31, 28, 33, 38, 30, 46, 41, 25, 29, 45, 47, 32, 51, 50, 36, 37, 58, 61, 40, 49, 44, 52, 34, 43, 48, 21, 54, 53, 55, 62, 60, 63, 65, 64, 67, 70, 73, 56, 75, 66, 68, 77, 72, 81, 90, 69, 96, 74, 98, 59, 83, 76, 85, 84, 93, 80, 89, 79, 71, 82, 94, 91, 97, 78, 57, 86, 87, 88, 100, 92, 95, 99]);
+% time elapsed: 97.77 s
+----------
+%%%mzn-stat: initTime=0.056622261
+%%%mzn-stat: objective=355
+%%%mzn-stat: nodes=754492
+%%%mzn-stat: restarts=5
+%%%mzn-stat: peakDepth=2305
+%%%mzn-stat: solveTime=102.294876042
+%%%mzn-stat: variables=3136
+%%%mzn-stat: propagators=7592
+%%%mzn-stat: failures=318639
+%%%mzn-stat: propagations=239906271
+%%%mzn-stat: nogoods=318639
+%%%mzn-stat: numAtomicConstraintsPropagated=0
+%%%mzn-stat: circuitNumber4951PropagationsThatFoundConflict=117849
+%%%mzn-stat: circuitNumber4951TotalFixedEdgesAtConflict=10780512
+%%%mzn-stat: circuitNumber4951NumberOfConflicts=117849
+%%%mzn-stat: circuitNumber4951PropagationsThatPruned=191576
+%%%mzn-stat: circuitNumber4951PropagationsTotal=982739
+%%%mzn-stat: AverageConflictSize=11.179350299241461
+%%%mzn-stat: NumUnitNogoodsLearned=0
+%%%mzn-stat: AverageLearnedNogoodLength=28.909967078731732
+%%%mzn-stat: AverageBacktrackAmount=0
+%%%mzn-stat: AverageLbd=16.9434344195155
+%%%mzn-stat: 2AutonomousSearchNumBackupCalled=21411
+%%%mzn-stat: 2AutonomousSearchNumPredicatesRemoved=0
+%%%mzn-stat: 2AutonomousSearchNumCalls=22543
+%%%mzn-stat: 2AutonomousSearchNumPredicatesAdded=15209
+%%%mzn-stat: 2AutonomousSearchAverageSizeOfHeap=167.72758727764716
+%%%mzn-stat: 2AutonomousSearchNumAssignedPredicatesEncountered=74497
+%%%mzn-stat-end
+maxleg = 355;
+succ = array1d(1..100,[3, 5, 2, 1, 11, 9, 4, 7, 8, 6, 15, 13, 19, 20, 22, 10, 23, 16, 14, 17, 18, 27, 24, 21, 26, 35, 42, 12, 31, 28, 33, 38, 30, 46, 41, 25, 29, 45, 47, 32, 51, 50, 36, 37, 58, 61, 40, 49, 44, 52, 34, 43, 48, 39, 54, 53, 55, 62, 60, 63, 65, 64, 67, 70, 73, 56, 75, 66, 68, 77, 72, 81, 90, 69, 96, 74, 98, 59, 83, 76, 85, 84, 93, 80, 89, 79, 71, 82, 94, 91, 97, 78, 57, 86, 87, 88, 100, 92, 95, 99]);
+% time elapsed: 107.68 s
+----------
+=====ERROR=====
+% time elapsed: 1788.08 s

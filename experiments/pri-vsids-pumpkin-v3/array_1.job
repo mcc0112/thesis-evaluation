@@ -1,0 +1,52 @@
+#!/bin/bash
+#SBATCH --job-name=pumpkin-revamp-eval-pumpkin-v3
+#SBATCH --array=1-425
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+
+#SBATCH --time=00:30:00
+#SBATCH --mem-per-cpu=4000M
+
+#SBATCH --account=education-eemcs-courses-cse3000
+#SBATCH --partition=compute-p2
+
+
+set -euo pipefail
+source /etc/profile.d/modules.sh
+module use /cm/shared/modulefiles
+source $HOME/.cargo/env
+export PATH=/scratch/mcarrio/MiniZincIDE-2.8.3-bundle-linux-x86_64/bin:$PATH
+module load miniforge3
+conda activate pumpkin-eval
+
+# How far to offset the SLURM_ARRAY_TASK_ID into the commands file.
+#
+# Required because multiple arrays may be necessary to execute all the commands.
+ID_OFFSET=0
+
+COMMAND_ID=$(($ID_OFFSET+$SLURM_ARRAY_TASK_ID))
+
+# Read the command from the commands file. This file lists all the commands on 
+# separate lines, and we use $COMMAND_ID to find the line and extract
+# the command.
+COMMAND=$(sed "${COMMAND_ID}q;d" /scratch/mcarrio/evaluation/experiments/20260605-18.05.57.686725-pumpkin-v3/commands.txt)
+# Expand into array while preserving quoting
+eval "COMMAND_ARRAY=($COMMAND)"
+
+RUN_DIR=/scratch/mcarrio/evaluation/experiments/20260605-18.05.57.686725-pumpkin-v3/$COMMAND_ID
+mkdir -p $RUN_DIR
+
+DRIVER_LOG="$RUN_DIR/driver.log"
+OUTPUT_LOG="$RUN_DIR/output.log"
+ERROR_LOG="$RUN_DIR/output.err"
+
+# Put the command into the driver log.
+echo "command = \"${COMMAND}\"" > $DRIVER_LOG
+
+# Runs the command with exact argument separation
+srun /usr/bin/time \
+        --quiet \
+        --format="command_status = %x\nwall_clock_time = %e\ncpu_user_time = %U\ncpu_system_time = %S" \
+        --append \
+        --output=$DRIVER_LOG \
+         "${COMMAND_ARRAY[@]}" > $OUTPUT_LOG 2> $ERROR_LOG
