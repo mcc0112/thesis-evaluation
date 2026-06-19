@@ -191,7 +191,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("-n", "--nodes", type=int, default=50,
                         help="Number of locations")
-    parser.add_argument("--p", type=float, default=0.10,
+    parser.add_argument("-p", type=float, default=0.10,
                         help="Arc probability in G(n,p)")
     parser.add_argument("-c", "--count", type=int, default=1,
                         help="Number of instances to generate")
