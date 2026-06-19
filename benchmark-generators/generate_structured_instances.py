@@ -6,14 +6,7 @@ Generates geographic k-nearest Hamiltonian circuit instances following
 the method of Francis & Stuckey (2014) "Explaining circuit propagation",
 Constraints 19:1-29, Section 3.
 
-Paper model (Fig. 1 of the paper)
------------------------------------
-  - Minimise the length of the longest leg (maxleg).
-  - Successor variables must form a Hamiltonian circuit.
-  - Only edges present in the transport network may be used
-    (travelTime[loc1, loc2] < 0 means no direct connection).
-  - The leg-length variable maxleg is bounded by:
-      succ[loc1] == loc2  ->  maxleg >= travelTime[loc1, loc2]
+
 
 Generation procedure (Section 3)
 ----------------------------------

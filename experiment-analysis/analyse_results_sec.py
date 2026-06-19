@@ -75,7 +75,7 @@ Output structure
 
 Usage
 -----
-    python experiments/analyse_results_primary.py [options]
+    python experiment-analysis/analyse_results_primary.py [options]
 
 Options
 -------

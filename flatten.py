@@ -6,7 +6,7 @@ from pathlib import Path
 import subprocess
 
 
-BENCHMARK_DIR = Path("benchmarks/random")
+BENCHMARK_DIR = Path("benchmarks")
 OUT_DIR = Path("flattened")
 
 
