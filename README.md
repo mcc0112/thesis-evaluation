@@ -7,7 +7,9 @@ Reproducibility package accompanying the Bachelor thesis:
 > Mireia Carrió Cortada
 > Supervisors: Emir Demirović, Imko Marijnissen
 > EEMCS, Delft University of Technology — CSE3000 Research Project, June 2026
-> <!-- TODO: add final TU Delft repository link once published, e.g. http://repository.tudelft.nl/... -->
+>
+> *An electronic version of the thesis will be available at
+> [repository.tudelft.nl](http://repository.tudelft.nl/) once validation is complete.*
 
 This repository contains everything needed to reproduce the experiments, figures,
 and tables in the thesis: the four propagator variants (V0–V3), benchmark
@@ -16,7 +18,7 @@ DelftBlue, and the analysis pipeline that turns raw solver output into the
 tables/figures reported in the paper.
 
 For the live development history of the solver itself (not squashed), see the
-original fork: <!-- TODO: confirm this is still the canonical dev repo --> https://github.com/mcc0112/Pumpkin
+canonical development fork: https://github.com/mcc0112/Pumpkin
 
 ---
 
@@ -51,7 +53,7 @@ thesis-evaluation/
 │
 ├── benchmark-generators/           # Instance generators
 │   ├── generate_structured_instances.py   # Francis & Stuckey k-nearest geographic generator
-│   └── generate_random_instances.py       # <!-- TODO: confirm final filename, see your Q7 fix -->
+│   └── generate_random_instances.py       # Erdős–Rényi random instance generator
 │
 ├── benchmarks/                     # Generated .mzn instances (structured + random)
 │   ├── primary/                    # Geographic k-nearest, n{20,50,100,150} x k{...}
@@ -67,9 +69,9 @@ thesis-evaluation/
 ├── processed/                      # Optional: flattened instances rewritten to log objectives
 │
 ├── experiments/                    # One subfolder per (benchmark x search x variant) run
-│   ├── pri_fixed_pumpkin-v0/  ... pri_fixed_pumpkin-v3/      # Exp 1.1 — geographic, fixed search
-│   ├── pri_vsids_pumpkin-v0/  ... pri_vsids_pumpkin-v3/      # Exp 1.2 — geographic, VSIDS search
-│   └── sec_fixed_pumpkin-v0/  ... sec_fixed_pumpkin-v3/      # Exp 2   — random graphs, fixed search
+│   ├── pri_fixed_pumpkin-v0/  ... pri_fixed_pumpkin-v3/   # Exp 1.1 — geographic, fixed search
+│   ├── pri_vsids_pumpkin-v0/  ... pri_vsids_pumpkin-v3/   # Exp 1.2 — geographic, VSIDS search
+│   └── sec_fixed_pumpkin-v0/  ... sec_fixed_pumpkin-v3/   # Exp 2   — random graphs, fixed search
 │       ├── experiment.toml         # Auto-recorded git SHA + branch for this run (see Provenance)
 │       ├── commands.txt            # One MiniZinc invocation per instance
 │       ├── array_*.job             # SLURM job array script(s)
@@ -96,12 +98,12 @@ thesis-evaluation/
 │           └── report_figures/     # Figures used directly in the thesis report
 │
 ├── build-instance-database.py      # Validates + indexes flattened .fzn instances -> instances.csv
+├── flatten.py                      # Flattens .mzn -> .fzn for one solver variant
 ├── generate-experiment.py          # Generates SLURM jobs for an experiment from instances.csv
 ├── parse-logs-no-internal-stats.py # Parses SLURM run logs -> stats.toml (external stats only)
-├── parse-logs-internal-stats.py    # Parses SLURM run logs -> stats.toml (incl. internal solver stats)
+├── parse-logs-internal-stats.py    # Same, plus variant-specific internal solver stats (see step 5)
 ├── aggregate-statistics.py         # Aggregates stats.toml files -> statistics_summary.csv per experiment
 ├── common.py                       # Shared config: SOLVER_DIRS, INSTANCES, CONFIGURATIONS, etc.
-├── flatten.py                      # Flattening scrip mzn -> fzn
 │
 ├── SOLVER_VERSIONS.md              # Pins each variant to an exact commit SHA
 ├── pyproject.toml
@@ -155,9 +157,10 @@ TOML experiment metadata and `stats.toml` run output), `tqdm` (progress bars
 during aggregation).
 
 You will also need:
-- **MiniZinc** version 2.9.5 to compile `.mzn` → `.fzn` and to dispatch runs
-  (each solver variant is registered as a MiniZinc solver configuration;
-  <!-- TODO: document how each pumpkin-vX MiniZinc solver config (.msc) is registered/located, e.g. is it under ~/.minizinc/solvers/ or solvers/pumpkin-vX/minizinc/? -->)
+- **MiniZinc** version 2.9.5 to compile `.mzn` → `.fzn` and to dispatch runs.
+  Each solver variant is registered as its own MiniZinc solver configuration
+  (`.msc` file) with a unique solver id — see [step 2](#2-build-the-solver-variants)
+  for how this is set up per variant.
 - **Rust / Cargo** to build each solver variant
 - Access to a SLURM cluster to reproduce the exact DelftBlue runs (see
   [Cluster Details](#cluster-details)), or you can adapt
@@ -187,7 +190,6 @@ uv run python benchmark-generators/generate_random_instances.py \
     -p 0.05 \
     -s 42 \
     -o ../benchmarks/secondary
-# <!-- TODO: confirm generate_random_instances.py's actual flags match this once renamed/fixed (your Q7) -->
 ```
 
 This populates `benchmarks/primary/` and `benchmarks/secondary/` with `.mzn`
@@ -217,7 +219,12 @@ cargo build --release -p pumpkin-solver
 
 Repeat for `pumpkin-v0`, `pumpkin-v2`, `pumpkin-v3`.
 
-
+Before building, give each variant's MiniZinc solver configuration a unique
+id, so MiniZinc can tell the four variants apart when flattening and
+dispatching runs. Edit the `id` field in each variant's
+`minizinc/pumpkin.msc` to something like
+`nl.tudelft.algorithmics.pumpkin-circuit-v0` for V0,
+`nl.tudelft.algorithmics.pumpkin-circuit-v1` for V1, and so on.
 
 ### 3. Flatten Instances & Build the Instance Database
 
@@ -226,10 +233,10 @@ Repeat for `pumpkin-v0`, `pumpkin-v2`, `pumpkin-v3`.
 into a single metadata file used by every later step.
 
 ```bash
-# Flatten .mzn -> .fzn for one variant
-# <!-- TODO: confirm flatten script filename and exact CLI args; placeholder below based on earlier usage -->
-uv run python flatten.py pumpkin-v0 ./solvers/pumpkin-v0/minizinc/
-# repeat for pumpkin-v1, pumpkin-v2, pumpkin-v3
+# Flatten .mzn -> .fzn for one variant.
+# Second argument is the MiniZinc solver id set in that variant's pumpkin.msc (step 2).
+uv run python flatten.py pumpkin-v0 nl.tudelft.algorithmics.pumpkin-circuit-v0
+# repeat for pumpkin-v1, pumpkin-v2, pumpkin-v3 with their respective solver ids
 # output expected under flattened/pumpkinv0/, flattened/pumpkinv1/, etc.
 
 # Validate that all 4 variants were flattened against the same instance set,
@@ -282,12 +289,8 @@ After running, **rename the timestamped folder** to its semantic experiment
 name (see [Experiment Naming Scheme](#experiment-naming-scheme)), e.g.:
 
 ```bash
-mv experiments/20260602-11.16.13.665988-pumpkin-v0 experiments/pri_fixed_v0
+mv experiments/20260602-11.16.13.665988-pumpkin-v0 experiments/pri_fixed_pumpkin-v0
 ```
-
-<!-- TODO: confirm whether this rename is done manually for every run, or
-whether you have a small script for it — if manual, worth a 1-line warning
-here so future-you doesn't forget which timestamp maps to which experiment -->
 
 #### Cluster Details
 
@@ -301,20 +304,54 @@ benchmark, 300s for the secondary/random benchmark).
 ### 5. Parse Logs
 
 Each instance run's `driver.log` / `output.log` / `output.err` must be
-parsed into a `stats.toml` file before aggregation. Two scripts are
-available depending on whether internal solver statistics (propagation
-counts, LBD, nogood length, SCC stats, etc.) are needed:
+parsed into a `stats.toml` file before aggregation. There are **two
+separate scripts**, both taking the same arguments — one parses only
+external/runtime statistics, the other additionally parses
+variant-specific internal solver statistics (propagation/clause-quality
+data, which is only meaningful once you also need things like LBD or
+pruning rate):
 
 ```bash
-# Without internal solver statistics (faster; runtime/solve-status only)
-uv run python parse-logs-no-internal-stats.py <!-- TODO: confirm exact CLI args -->
+# External statistics only - ones mentioned by flag
+uv run python parse-logs-no-internal-stats.py \
+    ./flattened/instances.csv \
+    experiments \
+    1800 \
+    --all \
+    --statistic nodes \
+    --statistic failures \
+    --statistic propagations \
+    --statistic propagators \
+    --statistic solveTime \
+    --statistic peakDepth \
+    --statistic AverageConflictSize \
+    --statistic AverageLbd \
+    --statistic AverageLearnedNogoodLength \
+    --statistic NumUnitNogoodsLearned \
+    --statistic AverageBacktrackAmount
 
-# With internal solver statistics (needed for clause-quality / pruning-rate analysis)
-uv run python parse-logs-internal-stats.py <!-- TODO: confirm exact CLI args -->
+# Same as above but also parses independent variant-specific stats
+uv run python parse-logs-internal-stats.py \
+    ./flattened/instances.csv \
+    experiments \
+    1800 \
+    --all \
+    --statistic nodes \
+    --statistic failures \
+    --statistic propagations \
+    --statistic propagators \
+    --statistic solveTime \
+    --statistic peakDepth \
+    --statistic AverageConflictSize \
+    --statistic AverageLbd \
+    --statistic AverageLearnedNogoodLength \
+    --statistic NumUnitNogoodsLearned \
+    --statistic AverageBacktrackAmount
 ```
 
-<!-- TODO: please share these two scripts (or their --help output) so I can
-fill in real argument examples here, same as the other pipeline steps. -->
+Positional arguments are `instances.csv`, the `experiments` directory, and
+the timeout in seconds; `--all` parses every experiment subfolder, and
+`--statistic <name>` is repeated once per statistic to extract.
 
 ### 6. Aggregate Statistics
 
@@ -322,7 +359,7 @@ fill in real argument examples here, same as the other pipeline steps. -->
 # Aggregate one experiment folder
 uv run python aggregate-statistics.py \
     flattened/instances.csv \
-    experiments/pri_fixed_v0
+    experiments/pri_fixed_pumpkin-v0
 
 # Aggregate every experiment subfolder under experiments/ in one call
 uv run python aggregate-statistics.py \
@@ -350,10 +387,10 @@ against `instances.csv`, and writes:
 `raw_statistics/<exp_family>/statistics-vX.csv`, e.g.:
 
 ```bash
-cp experiments/pri_fixed_v0/statistics_summary.csv raw_statistics/pri_fixed/statistics-v0.csv
+cp experiments/pri_fixed_pumpkin-v0/statistics_summary.csv raw_statistics/pri_fixed/statistics-v0.csv
 ```
 
-<!-- TODO: confirm whether this copy step is manual, or scripted — if manual, consider a small `collect_statistics.sh` to remove this as a manual/error-prone step before submission -->
+This is a manual step (no helper script).
 
 ### 7. Generate Tables & Figures
 
@@ -383,15 +420,19 @@ Each run produces, under `experiment-analysis/results/<experiment>/`:
   Hall-circuit fire rate, etc.)
 - `report_figures/` — the exact figures embedded in the thesis report
 
-<!-- TODO: confirm exact invocation for Exp 1.2 (VSIDS) — is it also
-analyse_results_primary.py pointed at raw_statistics/pri_vsids/, or a
-separate script? -->
+**VSIDS instances (Exp 1.2):** these reuse the same `analyse_results_primary.py`
+script, pointed at `raw_statistics/pri_vsids/` instead of `pri_fixed/`. The
+VSIDS variant of the benchmark suite is produced by removing the explicit
+search annotation line (`solve :: int_search(succ, input_order,
+indomain_min) minimize maxleg;`) from the `.mzn` files before flattening,
+which falls back to the solver's default activity-based (VSIDS) search.
+
 
 ---
 
 ## Experiment Naming Scheme
 
-Experiment folders under `experiments/` and `raw_statistics/` follow:
+Experiment folders under `experiments/` follow:
 
 ```
 <benchmark>_<search>_<variant>
@@ -401,13 +442,16 @@ Experiment folders under `experiments/` and `raw_statistics/` follow:
 |---|---|---|
 | `<benchmark>` | `pri` / `sec` | `pri` = primary, geographic k-nearest benchmark; `sec` = secondary, Erdős–Rényi random benchmark |
 | `<search>` | `fixed` / `vsids` | `fixed` = input-order + indomain-min; `vsids` = activity-based VSIDS branching |
-| `<variant>` | `v0` / `v1` / `v2` / `v3` | Propagator variant, see [Solver Variants](#solver-variants) |
+| `<variant>` | `pumpkin-v0` / `pumpkin-v1` / `pumpkin-v2` / `pumpkin-v3` | Propagator variant, see [Solver Variants](#solver-variants) |
 
-This gives 12 experiment folders in total: `pri_fixed_v{0..3}`,
-`pri_vsids_v{0..3}`, `sec_fixed_v{0..3}` — matching the 3 experiments × 4
-variants described in the thesis. Note: folders are generated with a
-timestamp prefix by `generate-experiment.py` and renamed to this scheme
-afterward (see [step 4](#4-generate--submit-experiments)).
+This gives 12 experiment folders in total: `pri_fixed_pumpkin-v{0..3}`,
+`pri_vsids_pumpkin-v{0..3}`, `sec_fixed_pumpkin-v{0..3}` — matching the 3
+experiments × 4 variants described in the thesis. Note: folders are
+generated with a timestamp prefix by `generate-experiment.py` and renamed
+to this scheme afterward (see [step 4](#4-generate--submit-experiments)).
+Under `raw_statistics/`, the per-variant CSVs use the shorter `statistics-vN.csv`
+form, since they are already nested inside a folder named for the benchmark
+and search strategy.
 
 ---
 
@@ -415,9 +459,9 @@ afterward (see [step 4](#4-generate--submit-experiments)).
 
 | Thesis section | Research question | Experiment folders |
 |---|---|---|
-| §4.3 Experiment 1.1 | RQ1: Does matching-based propagation help, and which variant wins? | `experiments/pri_fixed_v{0..3}/` |
-| §4.4 Experiment 1.2 | RQ2: Do rankings hold under VSIDS search? | `experiments/pri_vsids_v{0..3}/` |
-| §4.5 Experiment 2 | RQ3: Do effects generalise to unstructured graphs? | `experiments/sec_fixed_v{0..3}/` |
+| §4.3 Experiment 1.1 | RQ1: Does matching-based propagation help, and which variant wins? | `experiments/pri_fixed_pumpkin-v{0..3}/` |
+| §4.4 Experiment 1.2 | RQ2: Do rankings hold under VSIDS search? | `experiments/pri_vsids_pumpkin-v{0..3}/` |
+| §4.5 Experiment 2 | RQ3: Do effects generalise to unstructured graphs? | `experiments/sec_fixed_pumpkin-v{0..3}/` |
 
 ---
 
@@ -434,9 +478,3 @@ the solver variant at the time the experiment was generated. This means
 results can always be traced back to an exact version of the propagator
 code — independent of, and as a cross-check against, `SOLVER_VERSIONS.md` —
 even as development on the fork continues after thesis submission.
-
----
-
-## Report
-
-<!-- TODO: replace with the final TU Delft repository URL/DOI once assigned -->
